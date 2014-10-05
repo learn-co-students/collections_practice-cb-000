@@ -2,6 +2,76 @@ require 'spec_helper'
 
 describe 'collections practice' do
 
+  # Question 1
+  describe '#sort_array_asc' do
+    it 'should return an array sorted in ascending order' do
+      expect(sort_array_asc([25, 7, 1])).to eq([1,7,25])
+    end
+  end
+  
+  # Question 2
+  describe '#sort_array_desc' do
+    it 'should return an array sorted in descending order' do
+      expect(sort_array_desc([25, 7, 14])).to eq([25, 14, 7])
+    end
+  end
+
+  # Question 3
+  describe '#swap_elements' do
+    it 'swap the second and third elements of an array' do
+      expect(swap_elements(["blake", "ashley", "scott"])).to eq(["blake", "scott", "ashley"])
+    end
+  end
+
+  # Question 4
+  describe '#reverse_array' do
+    it 'reverse the order of an array' do
+      expect(reverse_array(["blake", "ashley", "scott"])).to eq(["scott", "ashley", "blake"])
+    end
+  end
+
+  # Question 5
+  describe '#kesha_maker' do  
+    it 'taking an array as an input, change the 3rd character of each element to a dollar sign.' do
+      expect(kesha_maker(["blake", "ashley", "scott"])).to eq(["bl$ke", "as$ley", "sc$tt"])
+    end
+  end
+  
+  # Question 6
+  describe '#greater_and_less_than_10' do
+    it 'using an array as input create a hash with two keys, "greater_than_10", "less_than_10" with values that are arrays of any numbers greater than 10 or less than 10' do
+      expect(greater_and_less_than_10([100, 1000, 5, 2, 3, 15, 1, 1, 100 ])).to eq({"greater_than_10" => [100, 1000, 15, 100], "less_than_10" => [5, 2, 3, 1, 1]})
+    end
+  end
+
+  # Question 7
+  describe '#find_winners' do
+    it 'find all the winners and return them in an array' do
+      expect(find_winners({:blake => "winner", :ashley => "loser", :caroline => "loser", :carlos => "winner"})).to eq([:blake, :carlos])
+    end
+  end
+
+  # Question 8
+  describe '#find_a' do
+    it 'find all words that begin with "a" in the following array' do
+      expect(find_a(["apple", "orange", "pear", "avis", "arlo", "ascot" ])).to eq(["apple", "avis", "arlo", "ascot"])
+    end
+  end
+
+  # Question 9
+  describe '#sum_array' do
+    it 'sum all the numbers in the following array' do
+      expect(sum_array([11,4,7,8,9,100,134])).to eq(273)
+    end
+  end
+
+  # Question 10
+  describe '#add_s' do
+    it 'Add an "s" to each word in the array except for the 2nd element in the array' do
+      expect(add_s(["hand","feet", "knee", "table"])).to eq(["hands","feet", "knees", "tables"])
+    end
+  end
+  
   let(:story) {
     <<-astory
       The summer of tenth grade was the best summer of my life.  
@@ -13,12 +83,6 @@ describe 'collections practice' do
       Its kind of amazing right?  Youd think for such an interesting person I might have more to say but you would be wrong.
     astory
   }
-  let(:jams) {["dave matthews band - tripping billies", 
-                "dave matthews band - #41", 
-                "calvin harris - some techno song", 
-                "avicii - some other dance song", 
-                "oasis - wonderwall", 
-                "oasis - champagne supernova"]}
   let(:story_count) {
     {"The"=>2, "summer"=>2, "of"=>3, "tenth"=>2, "grade"=>1, 
       "was"=>2, "the"=>5, "best"=>1, "my"=>1, "life."=>1, "I"=>4, 
@@ -36,127 +100,29 @@ describe 'collections practice' do
       "for"=>1, "such"=>1, "an"=>1, "interesting"=>1, "person"=>1, 
       "might"=>1, "more"=>1, "say"=>1, "but"=>1, "you"=>1, "be"=>1, "wrong."=>1}
   }
-  describe '#sort_array_asc' do
-
-    # Question 1
-
-    it 'should return an array sorted in ascending order' do
-      expect(sort_array_asc([25, 7, 1])).to eq([1,7,25])
-    end
-
-  end
-
-  describe '#sort_array_desc' do
-
-    # Question 2
-
-    it 'should return an array sorted in descending order' do
-      expect(sort_array_desc([25, 7, 14])).to eq([25, 14, 7])
-    end
-
-  end
-
-  describe '#swap_elements' do
-
-    # Question 3
-
-    it 'swap the second and third elements of an array' do
-      expect(swap_elements(["blake", "ashley", "scott"])).to eq(["blake", "scott", "ashley"])
-    end
-
-  end
-
-  describe '#reverse_array' do
-
-    # Question 4
-
-    it 'reverse the order of an array' do
-      expect(reverse_array(["blake", "ashley", "scott"])).to eq(["scott", "ashley", "blake"])
-    end
-
-  end
-
-  describe '#kesha_maker' do
-
-    # Question 5
-
-    it 'taking an array as an input, change the 3rd character of each element to a dollar sign.' do
-      expect(kesha_maker(["blake", "ashley", "scott"])).to eq(["bl$ke", "as$ley", "sc$tt"])
-    end
-
-  end
-
-  describe '#greater_and_less_than_10' do
-
-    # Question 6
-
-    it 'using an array as input create a hash with two keys, "greater_than_10", "less_than_10" with values that are arrays of any numbers greater than 10 or less than 10' do
-      expect(greater_and_less_than_10([100, 1000, 5, 2, 3, 15, 1, 1, 100 ])).to eq({"greater_than_10" => [100, 1000, 15, 100], "less_than_10" => [5, 2, 3, 1, 1]})
-    end
-
-  end
-
-  describe '#find_winners' do
-
-    # Question 7
-
-    it 'find all the winners and return them in an array' do
-      expect(find_winners({:blake => "winner", :ashley => "loser", :caroline => "loser", :carlos => "winner"})).to eq([:blake, :carlos])
-    end
-
-  end
-
-  describe '#find_a' do
-
-    # Question 8
-
-    it 'find all words that begin with "a" in the following array' do
-      expect(find_a(["apple", "orange", "pear", "avis", "arlo", "ascot" ])).to eq(["apple", "avis", "arlo", "ascot"])
-    end
-
-  end
-
-  describe '#sum_array' do
-
-    # Question 9
-
-    it 'sum all the numbers in the following array' do
-      expect(sum_array([11,4,7,8,9,100,134])).to eq(273)
-    end
-
-  end
-
-  describe '#add_s' do
-
-    # Question 10
-
-    it 'Add an "s" to each word in the array except for the 2nd element in the array' do
-      expect(add_s(["hand","feet", "knee", "table"])).to eq(["hands","feet", "knees", "tables"])
-    end
-
-  end
-  
-
+ 
+  # Question 11
   describe '#count_words' do
-
-    # Question 11
     # Tip: You'll need to use Hash.new(0) to do this rather than creating a hash using literal syntax like {}.
+    # http://ruby-doc.org/core-2.1.3/Hash.html#method-c-new
     it 'return a hash whose keys are each word in the story and the value is the number of occurences of that word' do
       expect(count_words(story)).to eq(story_count)
     end
-
   end
 
+  let(:jams) {["dave matthews band - tripping billies", 
+                "dave matthews band - #41", 
+                "calvin harris - some techno song", 
+                "avicii - some other dance song", 
+                "oasis - wonderwall", 
+                "oasis - champagne supernova"]}
+                
+  # Question 12
   describe '#organize_songs_by_artist' do
-
-    # Question 12
     # Tip: You'll need to use Hash.new(0) to do this rather than creating a hash using literal syntax like {}.
+    # http://ruby-doc.org/core-2.1.3/Hash.html#method-c-new
     it 'Organize the songs by artist' do
       expect(organize_songs_by_artist(jams)).to eq({"dave matthews band" => ["tripping billies", "#41"], "calvin harris" => ["some techno song"], "avicii" => ["some other dance song"], "oasis" => ["wonderwall", "champagne supernova"]})
     end
-
   end
-  
-
-
 end
