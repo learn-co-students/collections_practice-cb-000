@@ -1,5 +1,5 @@
 ---
-  tags: arrays, iteration, hashes, conditionals
+  tags: arrays, iteration, hashes, conditionals, bonus
   languages: ruby
 ---
 
