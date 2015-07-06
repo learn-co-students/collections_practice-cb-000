@@ -1,7 +1,5 @@
 # Bonus Collections Practice
 
-### Skills: iteration, arrays, hashes
-
 ## Instructions
 
 The goal of this lab is to become proficient manipulating arrays.  Try experimenting with the built in Ruby methods as well as implementing your own logic to solve these.  Write methods that solve each of the rspec tests.
