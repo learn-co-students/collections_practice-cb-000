@@ -1,4 +1,4 @@
-# Bonus Collections Practice
+# Bonus — Collections Practice
 
 ## Instructions
 
@@ -14,16 +14,16 @@ Build a method `sort_array_desc` that takes in an array of integers and returns 
 
 ## Question 3: `#swap_elements`
 
-Build a method `swap_elements` that takes in an array and swaps the second and third elements. Remeber that array indices start at 0, so the second element has an index of 1 and the third element has an index of 2. 
+Build a method `swap_elements` that takes in an array and swaps the second and third elements. Remeber that array indices start at `0`, so the second element has an index of `1` and the third element has an index of `2`. 
 
-_Bonus_ Try building a method `swap_elements_from_to` that takes in 3 arguments, `array, index, destination_index`, that will allow you to specify the index of the element you would like to move to a new index. So:
+**Advanced:** *Try building a method* `swap_elements_from_to` *that takes in three arguments,* `array, index, destination_index`*, that will allow you to specify the index of the element you would like to move to a new index. So:*
 
 ```ruby
 swap_elements_from_to(["a", "b", "c"],0,3) #=> ["c", "b", "a"]
 swap_elements_from_to(["a", "b", "c"],2,1) #=> ["a", "c", "b"]
 ```
 
-_Double Bonus_ Try writing test coverage for it!
+**Advanced #2:** *Try writing test coverage for it!*
 
 ## Question 4: `#reverse_array`
 
@@ -31,24 +31,27 @@ Build a method `reverse_array` that takes in an array of integers and returns a 
 
 ## Question 5: `#kesha_maker`
 
-Build a method called `kesha_maker` that takes in an array of string elements and replaces the 3rd character in the string with a `$`, Ke$ha style. Use the `.each` method to iterate and build a new array to return at the end of your method, just like we did in the "My Each" lab. 
-
+Build a method called `kesha_maker` that takes in an array of string elements and replaces the third character in the string with a `$` ("dollar sign")—Ke$ha style. Use the `.each` method to iterate and build a new array to return at the end of your method, just like we did in the "My Each" lab. 
 
 ## Question 6: `#find_a`
 
-Build a method `find_a` that returns all the strings in the array passed to it that `start_with?` (hint hint) the letter a. You'll want to use a high level iterator for this that finds, selects, or detects elements based on a condition.
+Build a method `find_a` that returns all the strings in the array passed to it that `start_with?` (**hint**) the letter `"a"`. You'll want to use a high level iterator for this that finds, selects, or detects elements based on a condition.
 
 ## Question 7: `#sum_array`
 
-Build a method `sum_array` that sums all the integers in the array.
+Build a method `sum_array` that adds together all of the integers in the array and returns their sum.
 
-_Bonus_ Try using `inject` or `each_with_object` here.
+**Advanced:** *Try using either the* `.inject` *method or the* `.each_with_object` *method here.*
 
 ## Question 8: `#add_s`
 
-Build a method that adds an "s" to each word in the array except for the 2nd element in the array. 
+Build a method that adds an `"s"` to each word in the array except for the second element in the array ("feet" is already plural). 
 
-_Bonus_ Iterators in Ruby are chainable, see if you can use `each_with_index` in addition to `collect` to solve this one very elegantly. What happens if you did `[1,2].each_with_index.collect{|element, index| }`?
+**Advanced:** *Iterators in Ruby are chainable, see if you can use* `.each_with_index` *in addition to* `.collect` *to solve this one in an elegant way. What happens if you write:*
+
+```ruby
+[1,2].each_with_index.collect{|element, index| }
+```
 
 
 
