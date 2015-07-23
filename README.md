@@ -1,5 +1,10 @@
 # Bonus — Collections Practice
 
+## Objectives
+
+1. Become proficient at manipulating arrays
+2. Practice using higher level Ruby enumerators like `.collect` and `.sort`
+
 ## Instructions
 
 The goal of this lab is to become proficient manipulating arrays.  Try experimenting with the built in Ruby methods as well as implementing your own logic to solve these.  Write methods that solve each of the rspec tests.
