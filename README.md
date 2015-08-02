@@ -15,11 +15,11 @@ Build a method `sort_array_asc` that takes in an array of integers and returns a
 
 ## Question 2: `#sort_array_desc`
 
-Build a method `sort_array_desc` that takes in an array of integers and returns a copy of the array with the integers in descending order. Remeber that `.sort` takes a block in which you can specify how you want your array sorted. 
+Build a method `sort_array_desc` that takes in an array of integers and returns a copy of the array with the integers in descending order. Remember that `.sort` takes a block in which you can specify how you want your array sorted. 
 
 ## Question 3: `#swap_elements`
 
-Build a method `swap_elements` that takes in an array and swaps the second and third elements. Remeber that array indices start at `0`, so the second element has an index of `1` and the third element has an index of `2`. 
+Build a method `swap_elements` that takes in an array and swaps the second and third elements. Remember that array indices start at `0`, so the second element has an index of `1` and the third element has an index of `2`. 
 
 **Advanced:** *Try building a method* `swap_elements_from_to` *that takes in three arguments,* `array, index, destination_index`*, that will allow you to specify the index of the element you would like to move to a new index. So:*
 
