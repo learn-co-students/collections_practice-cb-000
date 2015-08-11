@@ -57,8 +57,3 @@ Build a method that adds an `"s"` to each word in the array except for the secon
 ```ruby
 [1,2].each_with_index.collect{|element, index| }
 ```
-
-
-
-
-
