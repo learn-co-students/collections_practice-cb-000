@@ -24,7 +24,7 @@ Build a method `swap_elements` that takes in an array and swaps the second and t
 **Advanced:** *Try building a method* `swap_elements_from_to` *that takes in three arguments,* `array, index, destination_index`*, that will allow you to specify the index of the element you would like to move to a new index. So:*
 
 ```ruby
-swap_elements_from_to(["a", "b", "c"],0,3) #=> ["c", "b", "a"]
+swap_elements_from_to(["a", "b", "c"],0,2) #=> ["c", "b", "a"]
 swap_elements_from_to(["a", "b", "c"],2,1) #=> ["a", "c", "b"]
 ```
 
