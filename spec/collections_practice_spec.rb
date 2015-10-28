@@ -8,11 +8,17 @@ describe 'collections practice' do
       expect(sort_array_asc([25, 7, 1])).to eq([1,7,25])
     end
   end
-  
+
   # Question 2
   describe '#sort_array_desc' do
     it 'should return an array sorted in descending order' do
       expect(sort_array_desc([25, 7, 14])).to eq([25, 14, 7])
+    end
+  end
+
+  describe '#sort_array_char_count' do
+    it 'should return an array in ascending order sorted by the number of characters in the string' do
+      expect(sort_array_char_count(["dogs", "cat", "horses"])).to eq(["cat", "dogs", "horses"])
     end
   end
 
@@ -31,7 +37,7 @@ describe 'collections practice' do
   end
 
   # Question 5
-  describe '#kesha_maker' do  
+  describe '#kesha_maker' do
     # DO NOT USE .collect or .map. use .each to build a new array, like in the "my_each" lab!
     it 'taking an array as an input, change the 3rd character of each element to a dollar sign.' do
       expect(kesha_maker(["blake", "ashley", "scott"])).to eq(["bl$ke", "as$ley", "sc$tt"])
@@ -60,4 +66,3 @@ describe 'collections practice' do
     end
   end
 end
-  
