@@ -19,7 +19,7 @@ Build a method `sort_array_desc` that takes in an array of integers and returns 
 
 ## Question 3: `#sort_array_char_count`
 
-Build a method `sort_array_char_count` that takes in an array of string and returns a copy of the array with the strings ordered in asecending order by length. Remember that `.sort` takes a block in which you can specify how you want your array sorted.
+Build a method `sort_array_char_count` that takes in an array of string and returns a copy of the array with the strings ordered in ascending order by length. Remember that `.sort` takes a block in which you can specify how you want your array sorted.
 
 ## Question 4: `#swap_elements`
 
@@ -63,3 +63,5 @@ Build a method that adds an `"s"` to each word in the array except for the secon
 ```
 
 <a href='https://learn.co/lessons/collections_practice' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/collections_practice'>Sorting Lab</a> on Learn.co and start learning to code for free.</p>
