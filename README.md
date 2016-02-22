@@ -19,7 +19,7 @@ Build a method `sort_array_desc` that takes in an array of integers and returns 
 
 ## Question 3: `#sort_array_char_count`
 
-Build a method `sort_array_char_count` that takes in an array of string and returns a copy of the array with the strings ordered in ascending order by length. Remember that `.sort` takes a block in which you can specify how you want your array sorted.
+Build a method `sort_array_char_count` that takes in an array of strings and returns a copy of the array with the strings ordered in ascending order by length. Remember that `.sort` takes a block in which you can specify how you want your array sorted.
 
 ## Question 4: `#swap_elements`
 
@@ -40,7 +40,7 @@ Build a method `reverse_array` that takes in an array of integers and returns a 
 
 ## Question 6: `#kesha_maker`
 
-Build a method called `kesha_maker` that takes in an array of string elements and replaces the third character in the string with a `$` ("dollar sign")—Ke$ha style. Use the `.each` method to iterate and build a new array to return at the end of your method, just like we did in the "My Each" lab.
+Build a method called `kesha_maker` that takes in an array of strings and replaces the third character in each string with a `$` ("dollar sign")—Ke$ha style. Use the `.each` method to iterate and build a new array to return at the end of your method, just like we did in the "My Each" lab.
 
 ## Question 7: `#find_a`
 
@@ -61,7 +61,5 @@ Build a method that adds an `"s"` to each word in the array except for the secon
 ```ruby
 [1,2].each_with_index.collect{|element, index| }
 ```
-
-<a href='https://learn.co/lessons/collections_practice' data-visibility='hidden'>View this lesson on Learn.co</a>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/collections_practice'>Sorting Lab</a> on Learn.co and start learning to code for free.</p>
