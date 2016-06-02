@@ -7,7 +7,7 @@
 
 ## Instructions
 
-The goal of this lab is to become proficient manipulating arrays.  Try experimenting with the built in Ruby methods as well as implementing your own logic to solve these.  Write methods that solve each of the rspec tests.
+The goal of this lab is to become proficient at manipulating arrays.  Try experimenting with the built in Ruby methods as well as implementing your own logic to solve these.  Write methods that solve each of the rspec tests.
 
 ## Question 1: `#sort_array_asc`
 
@@ -63,3 +63,5 @@ Build a method that adds an `"s"` to each word in the array except for the secon
 ```
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/collections_practice'>Sorting Lab</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/collections_practice'>Sorting Lab</a> on Learn.co and start learning to code for free.</p>
