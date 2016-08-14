@@ -50,7 +50,7 @@ Build a method `find_a` that returns all the strings in the array passed to it t
 
 Build a method `sum_array` that adds together all of the integers in the array and returns their sum.
 
-**Advanced:** *Try using either the* `.inject` *method or the* `.each_with_object` *method here.*
+**Advanced:** *Try using the* `.inject` *method here.*
 
 ## Question 9: `#add_s`
 
