@@ -1,4 +1,4 @@
-# Bonus — Collections Practice
+# Collections Practice
 
 ## Objectives
 
